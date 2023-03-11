@@ -8,7 +8,7 @@ let scream = "    SHUT UP    "
 let whisper = scream.trim().toLowerCase();//trim is used to cut unnecessary extra space at the beginning and end
 
 let thing = 53
-let smt = "there is ${thing} bird in there";
+let smt = "there are ${thing} bird in there";
 
 const word = "bread"
 let word2 = word.slice(1).replace('d','l');//this will slice the word from 1 and then replace d with l
