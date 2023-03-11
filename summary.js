@@ -56,10 +56,10 @@ let human = {
     heigh: 178,
     weight: 65,
     isDead: false,
-    nicknames: ['stupid', 'idk', 'null1']
+    nicknames: ['pirate', 'idk', 'null1']
 }
 
-human["name"];//access to varible valled name
+human["name"];//access to varible called name
 human.name;//access to varible called name
 
 const restaurant = {
