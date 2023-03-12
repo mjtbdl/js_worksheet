@@ -122,5 +122,16 @@ const testScores={
     peter: 70
 }
 for(person in testScores){
-    console.log(`${person} scored ${testScores[person]}`);
+    //console.log(`${person} scored ${testScores[person]}`);
 }// because these types of objects not iterable you need to use for...in. keys of object in testScores are names and values are scores and entries are all information. 
+for(names of Object.keys(testScores)){
+    //console.log(names)
+}
+for(scores of Object.values(testScores)){
+    //console.log(scores)
+}
+for(info of Object.entries(testScores)){
+    //console.log(info)
+}
+    let average = Object.values(testScores)
+    //console.log(average.length)//Objects dont have a length so to find length of an object you need to make an array
