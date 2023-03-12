@@ -8,7 +8,7 @@ let scream = "    SHUT UP    "
 let whisper = scream.trim().toLowerCase();//trim is used to cut unnecessary extra space at the beginning and end
 
 let thing = 53
-let smt = "there are ${thing} bird in there";
+let smt = `there are ${thing} bird in there`;
 
 const word = "bread"
 let word2 = word.slice(1).replace('d','l');//this will slice the word from 1 and then replace d with l
@@ -81,11 +81,46 @@ for(let i = 0; i<people.length; i++){
     //console.log(people[i].toUpperCase())
 }
 
+const subreddits = ['funny','portugal','pics','england','lion']
+for(let i = 0; i<subreddits.length; i++){
+    //console.log(`visit reddit.com/r/${subreddits[i]}`)
+}//one way to list every sub of subreddit with using for i.
+for(let sub of subreddits){
+    //console.log(`visit reddit.com/r/${sub}`)
+}//another way list every sub of subreddit with using for..of 
+
 let seatingChart = [
-    ['jack','alfred','thomas','muller']
-    ['antonio','geffry','tom','dio']
-    ['liam','chris','mike']
+    ['jack','alfred','thomas','muller'],
+    ['antonio','geffry','tom','dio'],
+    ['liam','chris','mike','erika']
 ]
-for(let i = 0; i<seatingChart.length; i++){
-    console.log()
+for(row of seatingChart){
+    for(student of row){
+        //console.log(student);
+    }
+}//another example to for...of
+
+for(char of "Hello World"){
+    //console.log(char);
 }
+
+const numbers = [1,2,3,4,5,6,7,8,9];
+for(number of numbers){  
+    //console.log(number*number);
+}
+
+const testScores={
+    jack: 89,
+    damon: 67,
+    kim: 80,
+    shawn: 75,
+    marlon: 70,
+    dwayne: 95,
+    scarlet: 92,
+    ryan: 50,
+    li: 88,
+    peter: 70
+}
+for(person in testScores){
+    console.log(`${person} scored ${testScores[person]}`);
+}// because these types of objects not iterable you need to use for...in. keys of object in testScores are names and values are scores and entries are all information. 
